@@ -2,7 +2,7 @@ setup:
     pip install -r requirements.txt
 
 lint:
-    flake8 src
+    pylint --disable=R,C calculator.py
 
 test:
     pytest tests
